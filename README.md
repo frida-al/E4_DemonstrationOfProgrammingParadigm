@@ -81,25 +81,27 @@ I chose to work with this paradigm because I found it very useful and simple eno
 
 I was given the tip to use python to solve technical interviews because it is faster, so another possible solution will be presented in this language:
 
+        """ Same example presented in the diagram """
+        """ Auxiliar function find"""
          def find(x, lst):
              for item in lst:
                 if item == x:
                     return True
             return False
-    
+            
+        """ Intersect fucntion """
         def intersect(list1, list2):
-            """Return the intersection of list1 and list2 in the order of list1,
-            similar to the Prolog intersect/3 predicate."""
             result = []
             for element in list1:
                 if find(element, list2):
                     result.append(element)
             return result
-
+            
+        """ Variable declaration """
         list_1 = [1, 2, 3, 4, 5]
         list_2 = [3, 4, 6, 7]
-        print(intersect(list_1, list_2))  # Output: [3, 4]
+        print(intersect(list_1, list_2))
 
 This answers follows the sequential paradigm, because if follows a linear execution.
 
-Some advantages I can see of using the answer in Prolog rather that Python is that, because of the nature of the language, the function are built by telling the program what you need, instead of directly program how to do it. I can tell it to find if a number from the first list is in the second, and if it is, it directly adds it to the result list, rather than returning true or false, and depending on that answer, using the extra 'append' function, like with Python.
+Some advantages I can see of using the answer in Prolog rather that Python is that, because of the nature of the language, the function are built by telling the program what you need, instead of directly program how to do it. I can tell it to find if a number from the first list is in the second, and if it is, it directly adds it to the result list, rather than returning true or false, and depending on that answer, using the extra 'append' function, like with Python. Like I said before, it also facilitates the usage of recursion rather than using common for loops. 
