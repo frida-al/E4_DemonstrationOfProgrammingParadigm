@@ -1,15 +1,18 @@
+% Auxiliar function 'find' that looks up the element of the first list in the second
 find(X, [X|_T]).
 find(X, [_H|T]):-
 	find(X,T).
 
-intersect([],_,[]).
-intersect([H1|T1], L2, [H1|R]):-
+% Intersect function
+intersect([],_,[]). % Base case
+intersect([H1|T1], L2, [H1|R]):- % Second clause
     find(H1, L2),
-    !,
+    !, % Stop backtracking, keep only the first match of an answer
     intersect(T1, L2, R).
-intersect([_H1|T1], L2, R):-
+intersect([_H1|T1], L2, R):- % Third clause
     intersect(T1, L2, R).
 
+% Test cases
 list1:- 
     write('Test case 1:'), nl,
     write('Expected: [2,2]'), nl,
