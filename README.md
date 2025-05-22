@@ -90,7 +90,7 @@ I was given the tip to use python to solve technical interviews because it is fa
              for item in lst:
                 if item == x:
                     return True
-            return False
+             return False
             
         """ Intersect fucntion """
         def intersect(list1, list2):
@@ -101,8 +101,8 @@ I was given the tip to use python to solve technical interviews because it is fa
             return result
             
         """ Variable declaration """
-        list_1 = [1, 2, 3, 4, 5]
-        list_2 = [3, 4, 6, 7]
+        list_1 = [1, 2, 3, 4]
+        list_2 = [3, 4, 5, 6]
         print(intersect(list_1, list_2))
 
 This answers follows the sequential paradigm, because if follows a linear execution. The time complexity for this code is O(m * n), for the same reason as the prolog functions, and the space complexity is O(m), because no matter the sizes of the lists, it has constant space for the variables.
