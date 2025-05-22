@@ -67,5 +67,39 @@ I have implemented 8 tests, two of them come from the Leetcode platform, the oth
 >
 > [1,2,3,4], [3,4,5,6]
 
+# Time & Space complexity
 
+Time complexity: O(n * m), given that both functions travel through both of the lists.
 
+Space complexity: O(n + m), given that the maximum depth of the recursion is equal to the length of the list being searched.
+
+# Analysis
+
+I chose to work with this paradigm because I found it very useful and simple enough for it to be used during technical interviews, when applying for a job or an internship. I know that the language isn't accepeted during most of the test (at least I have never seen it before), but I think it is practical. Thanks to unification, the code follows a cascade process, which I can easily integrate recursion with. 
+
+### Other solutions
+
+I was given the tip to use python to solve technical interviews because it is faster, so another possible solution will be presented in this language:
+
+         def find(x, lst):
+             for item in lst:
+                if item == x:
+                    return True
+            return False
+    
+        def intersect(list1, list2):
+            """Return the intersection of list1 and list2 in the order of list1,
+            similar to the Prolog intersect/3 predicate."""
+            result = []
+            for element in list1:
+                if find(element, list2):
+                    result.append(element)
+            return result
+
+        list_1 = [1, 2, 3, 4, 5]
+        list_2 = [3, 4, 6, 7]
+        print(intersect(list_1, list_2))  # Output: [3, 4]
+
+This answers follows the sequential paradigm, because if follows a linear execution.
+
+Some advantages I can see of using the answer in Prolog rather that Python is that, because of the nature of the language, the function are built by telling the program what you need, instead of directly program how to do it. I can tell it to find if a number from the first list is in the second, and if it is, it directly adds it to the result list, rather than returning true or false, and depending on that answer, using the extra 'append' function, like with Python.
