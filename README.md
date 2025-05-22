@@ -4,7 +4,7 @@ Frida Alexia Arcadia Luna A01711615
 ---
 # Context & Description
 
-For this evidence, I have chosen to work with a Leetcode problem using the Logic Paradigm and Prolog Language. I chose to work with Leetcode because, in my experience, companies more often than not choose to use this kind of problems for interviews.
+For this evidence, I have chosen to work with a Leetcode problem using the Logic Paradigm and Prolog Language. I chose to work with Leetcode because, in my experience, companies more often than not choose to use this kind of problems for technical interviews. I have found really helpful to study them for these interviews. 
 
 I will be working on the problem '350. Intersection of two arrays II', which states the following:
 
@@ -45,6 +45,27 @@ The following diagram explains how the function works step by step.
 ![2](https://github.com/user-attachments/assets/55a575e4-d8bf-49b4-b7d8-0c42121da621)
 
 ![3](https://github.com/user-attachments/assets/e72a51f6-013c-4e7c-9ae9-b42422530308)
+
+# Tests
+
+I have implemented 8 tests, two of them come from the Leetcode platform, the other 6 I have implemented them based on those from Leetcode. The test cases are the following:
+
+>
+> [1,2,2,1], [2,2]
+>
+> [4,9,5], [9,4,9,8,4]
+>
+> [1,3,5,7,9,11,13], [2,4,6,8,10,11]
+>
+> [], []
+>
+> [1,2,3,4,5,6,7,8,9], [9,8,7,6,5,4,3,2,1]
+>
+> [73,187,90,22,198,8,143,17,61,27,42,156,174,52,65,36,40,29,153,125,38,44,130,47,105,88,75,95,107,195,13,171,37,5,3,188,134,92,94,66,176,145,135,77,26,144,160,123,51,110,167,97,111,186,62,34,132,41,128,18,54,117,191,48,79,184,106,157,120,59,28,101,139,27,16,124,83,31,14,112,96,115,98,6,19,87,15,150,181,104,10,70,21,46,72,49,11,1,4,109], [56,61,102,172,157,123,40,180,68,10,200,11,79,14,146,95,164,163,9,115,56,90,72,43,139,3,50,6,73,54,85,189,19,155,113,53,82,193,53,15,172,118,128,136,36,38,174,55,166,89,191,154,31,78,44,105,2,137,162,169,175,150,71,52,120,18,169,128,26,68,177,93,167,33,13,48,117,84,12,65,141,121,158,29,37,141,107,48,70,196,87,51,140,30,4,44,125,92,39,27]
+>
+> [1,2,3,4,5,6,7,8,9], [10,11,12,13,14,15,16,17,18,19]
+>
+> [1,2,3,4], [3,4,5,6]
 
 
 
