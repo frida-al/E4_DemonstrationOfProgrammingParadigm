@@ -39,3 +39,12 @@ The proper intersect function is the following:
         intersect(T1, L2, R).`
 
 The following diagram explains how the function works step by step.
+
+![1](https://github.com/user-attachments/assets/50eaf150-1eca-4582-b0be-897ede0992ee)
+
+![2](https://github.com/user-attachments/assets/55a575e4-d8bf-49b4-b7d8-0c42121da621)
+
+![3](https://github.com/user-attachments/assets/e72a51f6-013c-4e7c-9ae9-b42422530308)
+
+
+
