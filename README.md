@@ -16,11 +16,11 @@ Given that Leetcode doesn't work with prolog language, the platform won't verify
 
 To develop the function that will resolve the problem, I will use an auxiliar function called 'find', that will identify if the elements of the first list are inside the second list.
 
-`find(X, [X|_T].
+` find(X, [X|_T].`
 
- find(X, [_H|T]):- 
+` find(X, [_H|T]):- `
  
-     find(X, T).`
+    ` find(X, T).`
 
 The proper intersect function is the following:
 `intersect([],_,[]).
