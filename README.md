@@ -4,7 +4,10 @@ Frida Alexia Arcadia Luna A01711615
 ---
 # Context & Description
 
-For this evidence, I have chosen to work with a Leetcode problem using the Logic Paradigm and Prolog Language. I chose to work with Leetcode because, in my experience, companies more often than not choose to use this kind of problems for technical interviews. I have found really helpful to study them for these interviews. 
+For this evidence, I have chosen to work with a Leetcode problem using the Logical Paradigm and Prolog Language. I chose to work with Leetcode because, in my experience, companies more often than not choose to use this kind of problems for technical interviews. I have found really helpful to study them for these interviews. 
+
+### Logical Paradigm
+" The focus of the logical paradigm is on what needs to be done rather how it should be done basically emphasize on what code is actually doing. It just declares the result we want rather how it has be produced. " Geeks for Geeks (2025).
 
 I will be working on the problem '350. Intersection of two arrays II', which states the following:
 
@@ -102,6 +105,12 @@ I was given the tip to use python to solve technical interviews because it is fa
         list_2 = [3, 4, 6, 7]
         print(intersect(list_1, list_2))
 
-This answers follows the sequential paradigm, because if follows a linear execution.
+This answers follows the sequential paradigm, because if follows a linear execution. The time complexity for this code is O(m * n), for the same reason as the prolog functions, and the space complexity is O(m), because no matter the sizes of the lists, it has constant space for the variables.
 
-Some advantages I can see of using the answer in Prolog rather that Python is that, because of the nature of the language, the function are built by telling the program what you need, instead of directly program how to do it. I can tell it to find if a number from the first list is in the second, and if it is, it directly adds it to the result list, rather than returning true or false, and depending on that answer, using the extra 'append' function, like with Python. Like I said before, it also facilitates the usage of recursion rather than using common for loops. 
+Some advantages I can see of using the answer in Prolog rather that Python is that, because of the nature of the language, the function are built by telling the program what you need, instead of directly program how to do it. I can tell it to find if a number from the first list is in the second, and if it is, it directly adds it to the result list, rather than returning true or false, and depending on that answer, using the extra 'append' function, like with Python. Also, it allows backtracking, which is very useful when you need more than one solution to your problem, and matching elements that fit as optionsbased on the rules given. Like I said before, it also facilitates the usage of recursion rather than using common for loops. 
+
+Even if in the end we cannot see an improvement in the time and space complexity while using Prolog over Python, I thought it was worth exploring the option because of the other advantages I found.
+
+# References
+
+GeeksforGeeks. (2025, 8 abril). Introduction of Programming Paradigms. GeeksforGeeks. https://www.geeksforgeeks.org/introduction-of-programming-paradigms/ 
