@@ -7,7 +7,7 @@ Frida Alexia Arcadia Luna A01711615
 For this evidence, I have chosen to work with a Leetcode problem using the Logical Paradigm and Prolog Language. I chose to work with Leetcode because, in my experience, companies more often than not choose to use this kind of problems for technical interviews. I have found really helpful to study them for these interviews. 
 
 ### Logical Paradigm
-" The focus of the logical paradigm is on what needs to be done rather how it should be done basically emphasize on what code is actually doing. It just declares the result we want rather how it has be produced. " Geeks for Geeks (2025).
+" The logical paradigm is a computational approach that aims to unify different areas of computing by utilizing the generality of logic ". It mainly consists in working with predicates,that are formed by facts or rules, based on telling the program what needs to be done instead of telling it how it is done. 
 
 I will be working on the problem '350. Intersection of two arrays II', which states the following:
 
@@ -113,4 +113,6 @@ Even if in the end we cannot see an improvement in the time and space complexity
 
 # References
 
-GeeksforGeeks. (2025, 8 abril). Introduction of Programming Paradigms. GeeksforGeeks. https://www.geeksforgeeks.org/introduction-of-programming-paradigms/ 
+Kowalski, R. (2014). *Logic Programming*. Handbook of the history of logic (pp. 523-569). https://doi.org/10.1016/b978-0-444-51624-4.50012-5
+
+Coursera. (2024, 7 noviembre). Logic Programming: What It Is and How to Use It. Coursera. https://www.coursera.org/articles/logic-programming-language
