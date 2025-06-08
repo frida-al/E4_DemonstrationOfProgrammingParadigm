@@ -110,12 +110,19 @@ The following diagram explains how the function works step by step.
 ![intersect( 1,2,3,4 ,  3,4,5,6 , X)  (2)](https://github.com/user-attachments/assets/da434aa2-5dd3-4f5a-af73-60faf5c14f63)
 
 
-Some advantages I can see of using the answer in Prolog rather that Python is that, because of the nature of the language, the function are built by telling the program what you need, instead of directly program how to do it. I can tell it to find if a number from the first list is in the second, and if it is, it directly adds it to the result list, rather than returning true or false, and depending on that answer, using the extra 'append' function, like with Python. Also, it allows backtracking, which is very useful when you need more than one solution to your problem, and matching elements that fit as optionsbased on the rules given. Like I said before, it also facilitates the usage of recursion rather than using common for loops. 
+### Time & Space Complexity
 
-Even if in the end we cannot see an improvement in the time and space complexity while using Prolog over Python, I thought it was worth exploring the option because of the other advantages I found.
+The 'find' function, in its worst case, has to go through all of the elements of the list, which gives it a time complexity of O(n). For the intersect function, it also checks all the elements of the first list, calling the find fuction for each, so the overall time complexity would be of O(m*n).
+
+For the space complexity, we calculate based on the depth of recursion, which in this case, and in the worst case, is the length of lst1, which will also make it O(n).
+
+Both paradigms and languages have given the same time complexity for solving this problem. In this case, I believe both can be useful for solving the problem.Personally, I find the syntax of Prolog a bit easier than Racket, which is why, I would prefer to use it, but other than that, in this particular problem, we cannot fully see the extense of the different characteristics of each language.
 
 # References
 
-Kowalski, R. (2014). *Logic Programming*. Handbook of the history of logic (pp. 523-569). https://doi.org/10.1016/b978-0-444-51624-4.50012-5
+Aguirre, B. (2025). Lambda Calculus Functional Paradigm. https://docs.google.com/document/d/1w8DCXQ4cQPdcDPQOVN3Hn65X000V0oixgOatseDyvUE/edit?usp=sharing 
 
 Coursera. (2024, 7 noviembre). Logic Programming: What It Is and How to Use It. Coursera. https://www.coursera.org/articles/logic-programming-language
+
+Kowalski, R. (2014). *Logic Programming*. Handbook of the history of logic (pp. 523-569). https://doi.org/10.1016/b978-0-444-51624-4.50012-5
+
