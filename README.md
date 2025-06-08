@@ -101,6 +101,15 @@ To present another solution, I chose to work with the functional paradigm and th
          (cons (car lst1) (intersect (cdr lst1) lst2))] 
         [else (intersect (cdr lst1) lst2)])) 
 
+The following diagram explains how the function works step by step.
+
+![intersect( 1,2,3,4 ,  3,4,5,6 , X)](https://github.com/user-attachments/assets/c0969d8f-a35d-4dda-b7cd-88c83a7ec724)
+
+![intersect( 1,2,3,4 ,  3,4,5,6 , X)  (1)](https://github.com/user-attachments/assets/4825d170-bd6b-46df-9d03-dd110df09596)
+
+![intersect( 1,2,3,4 ,  3,4,5,6 , X)  (2)](https://github.com/user-attachments/assets/da434aa2-5dd3-4f5a-af73-60faf5c14f63)
+
+
 Some advantages I can see of using the answer in Prolog rather that Python is that, because of the nature of the language, the function are built by telling the program what you need, instead of directly program how to do it. I can tell it to find if a number from the first list is in the second, and if it is, it directly adds it to the result list, rather than returning true or false, and depending on that answer, using the extra 'append' function, like with Python. Also, it allows backtracking, which is very useful when you need more than one solution to your problem, and matching elements that fit as optionsbased on the rules given. Like I said before, it also facilitates the usage of recursion rather than using common for loops. 
 
 Even if in the end we cannot see an improvement in the time and space complexity while using Prolog over Python, I thought it was worth exploring the option because of the other advantages I found.
