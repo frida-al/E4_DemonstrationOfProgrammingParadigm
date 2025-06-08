@@ -7,7 +7,7 @@ Frida Alexia Arcadia Luna A01711615
 For this evidence, I have chosen to work with a Leetcode problem using the Logical Paradigm and Prolog Language. I chose to work with Leetcode because, in my experience, companies more often than not choose to use this kind of problems for technical interviews. I have found really helpful to study them for these interviews. 
 
 ### Logical Paradigm
-" The logical paradigm is a computational approach that aims to unify different areas of computing by utilizing the generality of logic ". It mainly consists in working with predicates,that are formed by facts or rules, based on telling the program what needs to be done instead of telling it how it is done. 
+" The logical paradigm is a computational approach that aims to unify different areas of computing by utilizing the generality of logic ". It mainly consists in working with predicates,that are formed by facts or rules, based on telling the program what needs to be done instead of telling it how it is done. (Kowalski, 2014).
 
 I will be working on the problem '350. Intersection of two arrays II', which states the following:
 
@@ -82,30 +82,24 @@ I chose to work with this paradigm because I found it very useful and simple eno
 
 ### Other solutions
 
-I was given the tip to use python to solve technical interviews because it is faster, so another possible solution will be presented in this language:
+To present another solution, I chose to work with the functional paradigm and the Racket language. Functional programming is a paradigm that includes the mathematical logic of lambda calculus into programming. In turn, lambda calculus allows abstraction, variable binding and substitution. With this paradigm, it is easier to apply recursion rather than iterations. The code to solve the problem we are treating in this evidence is the following.
 
-        """ Same example presented in the diagram """
-        """ Auxiliar function find"""
-         def find(x, lst):
-             for item in lst:
-                if item == x:
-                    return True
-             return False
-            
-        """ Intersect fucntion """
-        def intersect(list1, list2):
-            result = []
-            for element in list1:
-                if find(element, list2):
-                    result.append(element)
-            return result
-            
-        """ Variable declaration """
-        list_1 = [1, 2, 3, 4]
-        list_2 = [3, 4, 5, 6]
-        print(intersect(list_1, list_2))
+    #lang racket
 
-This answers follows the sequential paradigm, because if follows a linear execution. The time complexity for this code is O(m * n), for the same reason as the prolog functions, and the space complexity is O(m), because no matter the sizes of the lists, it has constant space for the variables.
+    ;; Auxiliary function 'find' that looks up the element of the first list in the second
+    (define (find x lst)
+      (cond
+        [(null? lst) false]
+        [(equal? x (car lst)) true]  
+        [else (find x (cdr lst))])) 
+
+    ;; Intersect function
+    (define (intersect lst1 lst2)
+      (cond
+        [(null? lst1) '()] ; Base case, if lst1 is empty, return empty list
+        [(find (car lst1) lst2) 
+         (cons (car lst1) (intersect (cdr lst1) lst2))] 
+        [else (intersect (cdr lst1) lst2)])) 
 
 Some advantages I can see of using the answer in Prolog rather that Python is that, because of the nature of the language, the function are built by telling the program what you need, instead of directly program how to do it. I can tell it to find if a number from the first list is in the second, and if it is, it directly adds it to the result list, rather than returning true or false, and depending on that answer, using the extra 'append' function, like with Python. Also, it allows backtracking, which is very useful when you need more than one solution to your problem, and matching elements that fit as optionsbased on the rules given. Like I said before, it also facilitates the usage of recursion rather than using common for loops. 
 
